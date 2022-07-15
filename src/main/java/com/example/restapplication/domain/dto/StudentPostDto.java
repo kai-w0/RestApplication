@@ -8,11 +8,11 @@ public class StudentPostDto {
     private String name;
     private boolean active;
 
-    public StudentPostDto(Student student) {
-        this.id = student.getId();
-        this.name = student.getName();
-        this.active = student.isActive();
-    }
+//    public StudentPostDto(Student student) {
+//        this.id = student.getId();
+//        this.name = student.getName();
+//        this.active = student.isActive();
+//    }
 
     public String getId() {
         return id;

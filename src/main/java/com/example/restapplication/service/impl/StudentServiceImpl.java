@@ -60,7 +60,7 @@ public class StudentServiceImpl implements StudentService {
     public CommonResponse updateStudent(StudentPostDto postDto, String id) {
         CommonResponse response = new CommonResponse();
         Student student = studentRepository.updateStudent(id, postDto);
-        response.setData(new StudentPostDto(student));
+        response.setData(new StudentResponseDTO(student));
         return response;
     }
 

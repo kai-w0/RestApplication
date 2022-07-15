@@ -37,7 +37,7 @@ public class StudentRepositoryImpl implements StudentRepository {
     @Override
     public void createStudent(StudentPostDto postDto) {
         Student s = new Student();
-        s.setId(postDto.getId());
+        s.setId("" + studentMap.size()+1);
         s.setName(postDto.getName());
         s.setActive(postDto.isActive());
         studentMap.put(s.getId(), s);
